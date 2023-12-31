@@ -1,0 +1,41 @@
+{
+  "devDependencies": {
+    "standard-version": "^9.5.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.3"
+  },
+  "name": "ketargs",
+  "version": "1.0.0",
+  "description": "Converts object properties into CLI-style flags and parameters",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "watch": "tsc --watch",
+    "build": "tsc -p tsconfig.json",
+    "test": "jest",
+    "release": "standard-version",
+    "release:first": "standard-version --skip.bump",
+    "release:soft": "standard-version --skip.bump --skip.commit --skip.tag"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toolx-dev/ketargs#readme"
+  },
+  "keywords": [
+    "CLI",
+    "object",
+    "converter",
+    "mustargs"
+  ],
+  "author": "William Manco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toolx-dev/ketargs/issues"
+  },
+  "homepage": "https://github.com/toolx-dev/ketargs#readme"
+}
