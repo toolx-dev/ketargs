@@ -2,11 +2,13 @@
   <a href="https://www.npmjs.com/package/ketargs" target="_blank" rel="noopener noreferrer">
     <img width="180" src="logo.png" alt="ketargs logo" />
   </a>
+</p>
+<br/>
+<p align="center">
   <a href="https://www.npmjs.com/package/@toolx/core"><img src="https://img.shields.io/npm/v/ketargs" alt="npm package"></a>
   <img alt="NPM" src="https://img.shields.io/npm/l/ketargs">
 </p>
 <br/>
-
 # ketargs
 
 ## Introduction
