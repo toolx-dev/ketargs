@@ -65,7 +65,7 @@ const options = {
 };
 
 const args = ketargs(options);
-// ['--optimize', 'true', '--config.depth', '3', '--config.algorithms', 'gzip', 'brotli', '--targets', 'src', 'lib']
+// ['--optimize', '--config.depth', '3', '--config.algorithms', 'gzip', 'brotli', '--targets', 'src', 'lib']
 ```
 
 ## Important: Setting `type` to `module` in `package.json`
