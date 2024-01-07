@@ -26,7 +26,14 @@ function ketargs(obj) {
             args.push(_key, ...transformObject(value));
         }
         else {
-            args.push(_key, value.toString());
+            if (typeof value === 'boolean') {
+                if (value) {
+                    args.push(_key);
+                }
+            }
+            else {
+                args.push(_key, value.toString());
+            }
         }
     };
     Object.entries(obj).forEach(([key, value]) => {

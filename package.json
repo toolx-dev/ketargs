@@ -14,9 +14,9 @@
     "watch": "tsc --watch",
     "build": "tsc -p tsconfig.json",
     "test": "jest",
-    "release": "standard-version",
-    "release:first": "standard-version --skip.bump",
-    "release:soft": "standard-version --skip.bump --skip.commit --skip.tag"
+    "release": "npm run build && standard-version",
+    "release:first": "npm run build && standard-version --skip.bump",
+    "release:soft": "npm run build && standard-version --skip.bump --skip.commit --skip.tag"
   },
   "jest": {
     "preset": "ts-jest",
