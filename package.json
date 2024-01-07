@@ -5,7 +5,7 @@
     "typescript": "^5.3.3"
   },
   "name": "ketargs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Converts object properties into CLI-style flags and parameters",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
