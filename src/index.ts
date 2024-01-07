@@ -35,7 +35,13 @@ function ketargs(obj: KetargsNestedObject): string[] {
     } else if (typeof value === 'object' && value !== null) {
        args.push(_key, ...transformObject(value));
     } else {
-      args.push(_key, value.toString());
+      if (typeof value === 'boolean') {
+        if (value) {
+          args.push(_key);
+        }
+      } else {
+        args.push(_key, value.toString());
+      }
     }
   };
 

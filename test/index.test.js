@@ -17,7 +17,12 @@ describe('ketargs', () => {
     expect(ketargs(args)).toEqual(['--foo', 'a.b=1', 'a.c=2']);
   })
 
-  
+  it('should parse boolean objects', () => {
+    const args = { foo: true };
+    console.log(ketargs(args))
+    expect(ketargs(args)).toEqual(['--foo']);
+  })
+
   it('should handle arrays and mixed types', () => {
     const args = { foo: { a: { b: [1, 2, 3], c: 'hello', d: 4.5, e: ['hello', 'foo'] } } };
     expect(ketargs(args)).toEqual(['--foo', 'a.b=1,2,3', 'a.c=hello', 'a.d=4.5', 'a.e=hello,foo']);
